@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>HelpDialog_For_Admin</class>
+ <widget class="QDialog" name="HelpDialog_For_Admin">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1130</width>
+    <height>721</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <widget class="QTextBrowser" name="textBrowser">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>70</y>
+     <width>1081</width>
+     <height>561</height>
+    </rect>
+   </property>
+   <property name="html">
+    <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'SimSun'; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:36px; margin-right:36px; -qt-block-indent:0; text-indent:0px; line-height:20px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:36px; margin-right:36px; -qt-block-indent:0; text-indent:0px; line-height:20px;&quot;&gt;&lt;span style=&quot; font-size:14px; font-weight:600; color:#000000;&quot;&gt;专业检索表达式语法&lt;/span&gt;&lt;span style=&quot; font-size:12px; color:#000000;&quot;&gt;       &lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:36px; margin-right:36px; -qt-block-indent:0; text-indent:0px; line-height:20px;&quot;&gt;&lt;span style=&quot; font-size:12px; color:#000000;&quot;&gt;专业检索用于图书情报专业人员查新、信息分析等工作，使用逻辑运算符和关键词构造检索式进行检索。 &lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:36px; margin-right:36px; -qt-block-indent:0; text-indent:0px; line-height:20px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:36px; margin-right:36px; -qt-block-indent:0; text-indent:0px; line-height:20px;&quot;&gt;&lt;span style=&quot; font-size:12px; font-weight:600; color:#000000;&quot;&gt;如何构造专业检索式：&lt;/span&gt;&lt;/p&gt;
+&lt;ol style=&quot;margin-top: 0px; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; -qt-list-indent: 1;&quot;&gt;&lt;li style=&quot; font-size:12px; color:#000000;&quot; style=&quot; margin-top:12px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:12px;&quot;&gt;选择检索项。&lt;br /&gt;跨库专业检索支持对以下检索项的检索：SU='主题',TI='题名',KY='关键词',AB='摘要',FT='全文',AU='作者',FI='第一责任人',AF='机构',JN='中文刊名'&amp;amp;'英文刊名', RF='引文',YE='年',FU='基金',CLC='中图分类号',SN='ISSN',CN='统一刊号',IB='ISBN' ,CF='被引频次'&lt;/span&gt;&lt;/li&gt;
+&lt;li style=&quot; font-size:12px; color:#000000;&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:12px;&quot;&gt;使用运算符构造表达式。&lt;br /&gt;可使用运算符说明如下：&lt;/span&gt;&lt;/li&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:1; text-indent:0px; font-size:12px; color:#000000;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:12px; color:#000000;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;table border=&quot;0&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:436px; margin-right:36px;&quot; cellspacing=&quot;2&quot; cellpadding=&quot;0&quot;&gt;
+&lt;tr&gt;
+&lt;td width=&quot;141&quot; bgcolor=&quot;#ebf3fb&quot; style=&quot; vertical-align:top;&quot;&gt;
+&lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:22px;&quot;&gt;&lt;span style=&quot; font-size:12px; font-weight:600; color:#000000; background-color:#ebf3fb;&quot;&gt;运算符&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;
+&lt;td width=&quot;72&quot; bgcolor=&quot;#ebf3fb&quot; style=&quot; vertical-align:top;&quot;&gt;
+&lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:22px;&quot;&gt;&lt;span style=&quot; font-size:12px; font-weight:600; color:#000000; background-color:#ebf3fb;&quot;&gt;检索功能&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;
+&lt;td width=&quot;170&quot; bgcolor=&quot;#ebf3fb&quot; style=&quot; vertical-align:top;&quot;&gt;
+&lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:22px;&quot;&gt;&lt;span style=&quot; font-size:12px; font-weight:600; color:#000000; background-color:#ebf3fb;&quot;&gt;检索含义&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;
+&lt;td width=&quot;186&quot; bgcolor=&quot;#ebf3fb&quot; style=&quot; vertical-align:top;&quot;&gt;
+&lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:22px;&quot;&gt;&lt;span style=&quot; font-size:12px; font-weight:600; color:#000000; background-color:#ebf3fb;&quot;&gt;举例&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;
+&lt;td width=&quot;135&quot; bgcolor=&quot;#ebf3fb&quot; style=&quot; vertical-align:top;&quot;&gt;
+&lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:22px;&quot;&gt;&lt;span style=&quot; font-size:12px; font-weight:600; color:#000000; background-color:#ebf3fb;&quot;&gt;适用检索项&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot; vertical-align:top; padding-left:3; padding-right:3; padding-top:0; padding-bottom:0;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:20px;&quot;&gt;&lt;span style=&quot; font-family:'??'; font-size:12px; color:#000000;&quot;&gt;='str1'&lt;/span&gt;&lt;span style=&quot; font-family:'??'; font-size:12px; color:#ee0000;&quot;&gt;*&lt;/span&gt;&lt;span style=&quot; font-family:'??'; font-size:12px; color:#000000;&quot;&gt;'str2'&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;
+&lt;td style=&quot; vertical-align:top; padding-left:3; padding-right:3; padding-top:0; padding-bottom:0;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:20px;&quot;&gt;&lt;span style=&quot; font-family:'??'; font-size:12px; color:#000000;&quot;&gt;并且包含&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;
+&lt;td style=&quot; vertical-align:top; padding-left:3; padding-right:3; padding-top:0; padding-bottom:0;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:20px;&quot;&gt;&lt;span style=&quot; font-family:'??'; font-size:12px; color:#000000;&quot;&gt;包含str1和str2&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;
+&lt;td style=&quot; vertical-align:top; padding-left:3; padding-right:3; padding-top:0; padding-bottom:0;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:20px;&quot;&gt;&lt;span style=&quot; font-family:'??'; font-size:12px; color:#000000;&quot;&gt;TI='转基因'*'水稻'&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;
+&lt;td rowspan=&quot;3&quot; style=&quot; vertical-align:top; padding-left:3; padding-right:3; padding-top:0; padding-bottom:0;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:20px;&quot;&gt;&lt;span style=&quot; font-family:'??'; font-size:12px; color:#000000;&quot;&gt;所有检索项&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot; vertical-align:top; padding-left:3; padding-right:3; padding-top:0; padding-bottom:0;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:20px;&quot;&gt;&lt;span style=&quot; font-family:'??'; font-size:12px; color:#000000;&quot;&gt;='str1'&lt;/span&gt;&lt;span style=&quot; font-family:'??'; font-size:12px; color:#ee0000;&quot;&gt;+&lt;/span&gt;&lt;span style=&quot; font-family:'??'; font-size:12px; color:#000000;&quot;&gt;'str2'&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;
+&lt;td style=&quot; vertical-align:top; padding-left:3; padding-right:3; padding-top:0; padding-bottom:0;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:20px;&quot;&gt;&lt;span style=&quot; font-family:'??'; font-size:12px; color:#000000;&quot;&gt;或者包含&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;
+&lt;td style=&quot; vertical-align:top; padding-left:3; padding-right:3; padding-top:0; padding-bottom:0;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:20px;&quot;&gt;&lt;span style=&quot; font-family:'??'; font-size:12px; color:#000000;&quot;&gt;包含str1或者str2&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;
+&lt;td style=&quot; vertical-align:top; padding-left:3; padding-right:3; padding-top:0; padding-bottom:0;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:20px;&quot;&gt;&lt;span style=&quot; font-family:'??'; font-size:12px; color:#000000;&quot;&gt;TI='转基因'+'水稻'&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot; vertical-align:top; padding-left:3; padding-right:3; padding-top:0; padding-bottom:0;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:20px;&quot;&gt;&lt;span style=&quot; font-family:'??'; font-size:12px; color:#000000;&quot;&gt;='str1'&lt;/span&gt;&lt;span style=&quot; font-family:'??'; font-size:12px; color:#ee0000;&quot;&gt;-&lt;/span&gt;&lt;span style=&quot; font-family:'??'; font-size:12px; color:#000000;&quot;&gt;'str2'&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;
+&lt;td style=&quot; vertical-align:top; padding-left:3; padding-right:3; padding-top:0; padding-bottom:0;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:20px;&quot;&gt;&lt;span style=&quot; font-family:'??'; font-size:12px; color:#000000;&quot;&gt;不包含&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;
+&lt;td style=&quot; vertical-align:top; padding-left:3; padding-right:3; padding-top:0; padding-bottom:0;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:20px;&quot;&gt;&lt;span style=&quot; font-family:'??'; font-size:12px; color:#000000;&quot;&gt;包含str1不包含str2&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;
+&lt;td style=&quot; vertical-align:top; padding-left:3; padding-right:3; padding-top:0; padding-bottom:0;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:20px;&quot;&gt;&lt;span style=&quot; font-family:'??'; font-size:12px; color:#000000;&quot;&gt;TI='转基因'-'水稻'&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot; vertical-align:top; padding-left:3; padding-right:3; padding-top:0; padding-bottom:0;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:20px;&quot;&gt;&lt;span style=&quot; font-family:'??'; font-size:12px; font-style:italic; color:#000000;&quot;&gt;='str'&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;
+&lt;td style=&quot; vertical-align:top; padding-left:3; padding-right:3; padding-top:0; padding-bottom:0;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:20px;&quot;&gt;&lt;span style=&quot; font-family:'??'; font-size:12px; color:#000000;&quot;&gt;精确&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;
+&lt;td style=&quot; vertical-align:top; padding-left:3; padding-right:3; padding-top:0; padding-bottom:0;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:20px;&quot;&gt;&lt;span style=&quot; font-family:'??'; font-size:12px; color:#000000;&quot;&gt;精确匹配词串str&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;
+&lt;td style=&quot; vertical-align:top; padding-left:3; padding-right:3; padding-top:0; padding-bottom:0;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:20px;&quot;&gt;&lt;span style=&quot; font-family:'??'; font-size:12px; color:#000000;&quot;&gt;AU='袁隆平'&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;
+&lt;td rowspan=&quot;2&quot; style=&quot; vertical-align:top; padding-left:3; padding-right:3; padding-top:0; padding-bottom:0;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:20px;&quot;&gt;&lt;span style=&quot; font-family:'??'; font-size:12px; color:#000000;&quot;&gt;作者、第一责任人、机构、中文刊名&amp;amp;英文刊名&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot; vertical-align:top; padding-left:3; padding-right:3; padding-top:0; padding-bottom:0;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:20px;&quot;&gt;&lt;span style=&quot; font-family:'??'; font-size:12px; color:#000000;&quot;&gt;='str /&lt;/span&gt;&lt;span style=&quot; font-family:'??'; font-size:12px; color:#ee0000;&quot;&gt;SUB N&lt;/span&gt;&lt;span style=&quot; font-family:'??'; font-size:12px; color:#000000;&quot;&gt;'&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;
+&lt;td style=&quot; vertical-align:top; padding-left:3; padding-right:3; padding-top:0; padding-bottom:0;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:20px;&quot;&gt;&lt;span style=&quot; font-family:'??'; font-size:12px; color:#000000;&quot;&gt;序位包含&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;
+&lt;td style=&quot; vertical-align:top; padding-left:3; padding-right:3; padding-top:0; padding-bottom:0;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:20px;&quot;&gt;&lt;span style=&quot; font-family:'??'; font-size:12px; color:#000000;&quot;&gt;第n位包含检索词str&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;
+&lt;td style=&quot; vertical-align:top; padding-left:3; padding-right:3; padding-top:0; padding-bottom:0;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:20px;&quot;&gt;&lt;span style=&quot; font-family:'??'; font-size:12px; color:#000000;&quot;&gt;AU='刘强 /SUB 1 '&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot; vertical-align:top; padding-left:3; padding-right:3; padding-top:0; padding-bottom:0;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:20px;&quot;&gt;&lt;span style=&quot; font-family:'??'; font-size:12px; color:#000000;&quot;&gt;%'str'&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;
+&lt;td style=&quot; vertical-align:top; padding-left:3; padding-right:3; padding-top:0; padding-bottom:0;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:20px;&quot;&gt;&lt;span style=&quot; font-family:'??'; font-size:12px; color:#000000;&quot;&gt;包含&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;
+&lt;td style=&quot; vertical-align:top; padding-left:3; padding-right:3; padding-top:0; padding-bottom:0;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:20px;&quot;&gt;&lt;span style=&quot; font-family:'??'; font-size:12px; color:#000000;&quot;&gt;包含词str或str切分的词&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;
+&lt;td style=&quot; vertical-align:top; padding-left:3; padding-right:3; padding-top:0; padding-bottom:0;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:20px;&quot;&gt;&lt;span style=&quot; font-family:'??'; font-size:12px; color:#000000;&quot;&gt;TI%'转基因水稻'&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;
+&lt;td rowspan=&quot;3&quot; style=&quot; vertical-align:top; padding-left:3; padding-right:3; padding-top:0; padding-bottom:0;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:20px;&quot;&gt;&lt;span style=&quot; font-family:'??'; font-size:12px; color:#000000;&quot;&gt;全文、主题、题名、关键词、摘要、中图分类号&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot; vertical-align:top; padding-left:3; padding-right:3; padding-top:0; padding-bottom:0;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:20px;&quot;&gt;&lt;span style=&quot; font-family:'??'; font-size:12px; color:#000000;&quot;&gt;='str'&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;
+&lt;td style=&quot; vertical-align:top; padding-left:3; padding-right:3; padding-top:0; padding-bottom:0;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:20px;&quot;&gt;&lt;span style=&quot; font-family:'??'; font-size:12px; color:#000000;&quot;&gt;包含&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;
+&lt;td style=&quot; vertical-align:top; padding-left:3; padding-right:3; padding-top:0; padding-bottom:0;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:20px;&quot;&gt;&lt;span style=&quot; font-family:'??'; font-size:12px; color:#000000;&quot;&gt;包含检索词str&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;
+&lt;td style=&quot; vertical-align:top; padding-left:3; padding-right:3; padding-top:0; padding-bottom:0;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:20px;&quot;&gt;&lt;span style=&quot; font-family:'??'; font-size:12px; color:#000000;&quot;&gt;TI='转基因水稻'&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot; vertical-align:top; padding-left:3; padding-right:3; padding-top:0; padding-bottom:0;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:20px;&quot;&gt;&lt;span style=&quot; font-family:'??'; font-size:12px; color:#000000;&quot;&gt;=' str1 &lt;/span&gt;&lt;span style=&quot; font-family:'??'; font-size:12px; color:#ee0000;&quot;&gt;/SEN N&lt;/span&gt;&lt;span style=&quot; font-family:'??'; font-size:12px; color:#000000;&quot;&gt; str2 '&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;
+&lt;td colspan=&quot;2&quot; style=&quot; vertical-align:top; padding-left:3; padding-right:3; padding-top:0; padding-bottom:0;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:20px;&quot;&gt;&lt;span style=&quot; font-family:'??'; font-size:12px; color:#000000;&quot;&gt;同段，按次序出现，间隔小于N句&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;
+&lt;td style=&quot; vertical-align:top; padding-left:3; padding-right:3; padding-top:0; padding-bottom:0;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:20px;&quot;&gt;&lt;span style=&quot; font-family:'??'; font-size:12px; color:#000000;&quot;&gt;FT='转基因 /SEN 0水稻'&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot; vertical-align:top; padding-left:3; padding-right:3; padding-top:0; padding-bottom:0;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:20px;&quot;&gt;&lt;span style=&quot; font-family:'??'; font-size:12px; color:#000000;&quot;&gt;=' str1 &lt;/span&gt;&lt;span style=&quot; font-family:'??'; font-size:12px; color:#ee0000;&quot;&gt;/NEAR N&lt;/span&gt;&lt;span style=&quot; font-family:'??'; font-size:12px; color:#000000;&quot;&gt; str2 '&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;
+&lt;td colspan=&quot;2&quot; style=&quot; vertical-align:top; padding-left:3; padding-right:3; padding-top:0; padding-bottom:0;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:20px;&quot;&gt;&lt;span style=&quot; font-family:'??'; font-size:12px; color:#000000;&quot;&gt;同句，间隔小于N个词&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;
+&lt;td style=&quot; vertical-align:top; padding-left:3; padding-right:3; padding-top:0; padding-bottom:0;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:20px;&quot;&gt;&lt;span style=&quot; font-family:'??'; font-size:12px; color:#000000;&quot;&gt;AB='转基因 /NEAR 5 水稻'&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;
+&lt;td rowspan=&quot;5&quot; style=&quot; vertical-align:top; padding-left:3; padding-right:3; padding-top:0; padding-bottom:0;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:20px;&quot;&gt;&lt;span style=&quot; font-family:'??'; font-size:12px; color:#000000;&quot;&gt;主题、题名、关键词、摘要、中图分类号&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot; vertical-align:top; padding-left:3; padding-right:3; padding-top:0; padding-bottom:0;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:20px;&quot;&gt;&lt;span style=&quot; font-family:'??'; font-size:12px; color:#000000;&quot;&gt;=' str1 &lt;/span&gt;&lt;span style=&quot; font-family:'??'; font-size:12px; color:#ee0000;&quot;&gt;/PREV N&lt;/span&gt;&lt;span style=&quot; font-family:'??'; font-size:12px; color:#000000;&quot;&gt; str2 '&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;
+&lt;td colspan=&quot;2&quot; style=&quot; vertical-align:top; padding-left:3; padding-right:3; padding-top:0; padding-bottom:0;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:20px;&quot;&gt;&lt;span style=&quot; font-family:'??'; font-size:12px; color:#000000;&quot;&gt;同句，按词序出现，间隔小于N个词&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;
+&lt;td style=&quot; vertical-align:top; padding-left:3; padding-right:3; padding-top:0; padding-bottom:0;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:20px;&quot;&gt;&lt;span style=&quot; font-family:'??'; font-size:12px; color:#000000;&quot;&gt;AB='转基因 /PREV 5 水稻'&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot; vertical-align:top; padding-left:3; padding-right:3; padding-top:0; padding-bottom:0;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:20px;&quot;&gt;&lt;span style=&quot; font-family:'??'; font-size:12px; color:#000000;&quot;&gt;=' str1 &lt;/span&gt;&lt;span style=&quot; font-family:'??'; font-size:12px; color:#ee0000;&quot;&gt;/AFT N&lt;/span&gt;&lt;span style=&quot; font-family:'??'; font-size:12px; color:#000000;&quot;&gt; str2 '&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;
+&lt;td colspan=&quot;2&quot; style=&quot; vertical-align:top; padding-left:3; padding-right:3; padding-top:0; padding-bottom:0;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:20px;&quot;&gt;&lt;span style=&quot; font-family:'??'; font-size:12px; color:#000000;&quot;&gt;同句，按词序出现，间隔大于N个词&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;
+&lt;td style=&quot; vertical-align:top; padding-left:3; padding-right:3; padding-top:0; padding-bottom:0;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:20px;&quot;&gt;&lt;span style=&quot; font-family:'??'; font-size:12px; color:#000000;&quot;&gt;AB='转基因 /AFT 5 水稻'&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot; vertical-align:top; padding-left:3; padding-right:3; padding-top:0; padding-bottom:0;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:20px;&quot;&gt;&lt;span style=&quot; font-family:'??'; font-size:12px; color:#000000;&quot;&gt;=' str1 &lt;/span&gt;&lt;span style=&quot; font-family:'??'; font-size:12px; color:#ee0000;&quot;&gt;/PRG N&lt;/span&gt;&lt;span style=&quot; font-family:'??'; font-size:12px; color:#000000;&quot;&gt; str2 '&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;
+&lt;td colspan=&quot;2&quot; style=&quot; vertical-align:top; padding-left:3; padding-right:3; padding-top:0; padding-bottom:0;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:20px;&quot;&gt;&lt;span style=&quot; font-family:'??'; font-size:12px; color:#000000;&quot;&gt;全文，词间隔小于N段&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;
+&lt;td style=&quot; vertical-align:top; padding-left:3; padding-right:3; padding-top:0; padding-bottom:0;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:20px;&quot;&gt;&lt;span style=&quot; font-family:'??'; font-size:12px; color:#000000;&quot;&gt;AB='转基因 /PRG 5 水稻'&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot; vertical-align:top; padding-left:3; padding-right:3; padding-top:0; padding-bottom:0;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:20px;&quot;&gt;&lt;span style=&quot; font-family:'??'; font-size:12px; color:#000000;&quot;&gt;=' str &lt;/span&gt;&lt;span style=&quot; font-family:'??'; font-size:12px; color:#ee0000;&quot;&gt;$ N &lt;/span&gt;&lt;span style=&quot; font-family:'??'; font-size:12px; color:#000000;&quot;&gt;'&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;
+&lt;td colspan=&quot;2&quot; style=&quot; vertical-align:top; padding-left:3; padding-right:3; padding-top:0; padding-bottom:0;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:20px;&quot;&gt;&lt;span style=&quot; font-family:'??'; font-size:12px; color:#000000;&quot;&gt;检索词出现N次&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;
+&lt;td style=&quot; vertical-align:top; padding-left:3; padding-right:3; padding-top:0; padding-bottom:0;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:20px;&quot;&gt;&lt;span style=&quot; font-family:'??'; font-size:12px; color:#000000;&quot;&gt;TI='转基因 $ 2'&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot; vertical-align:top; padding-left:3; padding-right:3; padding-top:0; padding-bottom:0;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:20px;&quot;&gt;&lt;span style=&quot; font-family:'??'; font-size:12px; color:#000000;&quot;&gt;BETWEEN&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;
+&lt;td colspan=&quot;2&quot; style=&quot; vertical-align:top; padding-left:3; padding-right:3; padding-top:0; padding-bottom:0;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:20px;&quot;&gt;&lt;span style=&quot; font-family:'??'; font-size:12px; color:#000000;&quot;&gt;年度阶段查询&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;
+&lt;td style=&quot; vertical-align:top; padding-left:3; padding-right:3; padding-top:0; padding-bottom:0;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:20px;&quot;&gt;&lt;span style=&quot; font-family:'??'; font-size:12px; color:#000000;&quot;&gt;YE BETWEEN ('2000','2013')&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;
+&lt;td style=&quot; vertical-align:top; padding-left:3; padding-right:3; padding-top:0; padding-bottom:0;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:20px;&quot;&gt;&lt;span style=&quot; font-family:'??'; font-size:12px; color:#000000;&quot;&gt;年、发表时间、学位年度、更新日期&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;li style=&quot; font-size:12px; color:#000000;&quot; style=&quot; margin-top:0px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:12px;&quot;&gt;使用“AND”、“OR”、“NOT”等逻辑运算符，“()”符号将表达式按照检索目标组合起来。&lt;/span&gt;&lt;/li&gt;&lt;/ol&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:1; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:12px; font-weight:600; color:#000000;&quot;&gt;注意事项：&lt;/span&gt;&lt;/p&gt;
+&lt;ul style=&quot;margin-top: 0px; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; -qt-list-indent: 1;&quot;&gt;&lt;li style=&quot; font-size:12px; color:#000000;&quot; style=&quot; margin-top:12px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:12px;&quot;&gt;所有符号和英文字母，都必须使用英文半角字符；&lt;/span&gt;&lt;/li&gt;
+&lt;li style=&quot; font-size:12px; color:#000000;&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:12px;&quot;&gt;“AND”、“OR”、“NOT”三种逻辑运算符的优先级相同；如要改变组合的顺序，请使用英文半角圆括号“()”将条件括起；&lt;/span&gt;&lt;/li&gt;
+&lt;li style=&quot; font-size:12px; color:#000000;&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:12px;&quot;&gt;逻辑关系符号 （与（AND）、或（OR）非（NOT）前后要空一个字节；&lt;/span&gt;&lt;/li&gt;
+&lt;li style=&quot; font-size:12px; color:#000000;&quot; style=&quot; margin-top:0px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:12px;&quot;&gt;使用“同句”、“同段”、“词频”时，需用一组西文单引号将多个检索词及其运算符括起， 如：'流体 # 力学'；&lt;br /&gt;例1 &lt;br /&gt;要求检索钱伟长在清华大学或上海大学时发表的文章。检索式：AU =钱伟长 and (AF =清华大学 or AF =上海大学) &lt;br /&gt;例2&lt;br /&gt;要求检索钱伟长在清华大学期间发表的题名或摘要中都包含“物理”的文章。检索式：AU =钱伟长 and AF=清华大学 and (TI =物理 or AB = 物理)&lt;/span&gt;&lt;/li&gt;&lt;/ul&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:1; text-indent:0px; font-size:12px; color:#000000;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton">
+   <property name="geometry">
+    <rect>
+     <x>860</x>
+     <y>660</y>
+     <width>131</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>OK</string>
+   </property>
+  </widget>
+  <widget class="Line" name="line">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>40</y>
+     <width>1081</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Horizontal</enum>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_2">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>20</y>
+     <width>121</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>检索表达式语法:</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>pushButton</sender>
+   <signal>clicked()</signal>
+   <receiver>HelpDialog_For_Admin</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>925</x>
+     <y>675</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>564</x>
+     <y>360</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>
