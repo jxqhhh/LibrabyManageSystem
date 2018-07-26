@@ -1,0 +1,61 @@
+# LibrabyManageSystem
+OOP teamwork
+图书管理系统代码文档
+                          王伟帆 梁明圆 金昕祺
+一、设计思路
+本系统在开发过程中严格遵循模型-试图-控制器模式(MVC)，整个软件可以划分为界面、逻辑、数据3个不同的功能层次。其中，数据层负责与MySQL数据库进行通讯，进行数据存取，并对逻辑层提供语义完备，而又不依赖于具体数据库的各类基本操作接口。逻辑层将数据层提供的基本操作接口的语义加以组合，并对界面层提供各种用户操作的接口。界面层负责呈示页面，并根据用户在界面上的操作，调用逻辑层接口，完成指定的逻辑功能。本系统在实现图书检索和借阅的基本功能外，还力图实现常见的收藏夹、消息、评论等功能。本系统为数据库、UI的具体实现方式预留了充分的扩展空间。理论上，无论用何种数据库，只要数据层的对外接口不变；无论用何种UI实现，只要仅调用逻辑层提供的接口，则系统仍具有原本的功能。
+
+二、功能介绍
+1.数据管理:
+利用远程MySQL数据库，存储相关数据，包括：
+（1）图书信息：利用book表存储id、ISBN、书名、作者、出版社、出版日期、馆藏数（包括在架数和被借出的数目）、在架数、摘要、电子版本；
+对于某个id的某本图书，若其馆藏数为m，则在book_object表中有对应m条记录，每条记录对应具体某一本馆藏的借阅状态、借阅者、位置信息等。
+（2）账户信息：利用person表和person_idlist表记录每个账户的用户名、密码、权限（管理员/普通用户）。
+（3）借阅/归还记录：利用book_borrow表记录历史上所有的借阅申请，包括申请人、book_id、借阅状态（申请被拒/申请未审核/借阅中/过期未还/已经归还）、申请的借书时间段，同时在book_object表中也可查到现在的图书的借阅情况。
+（4）图书收藏情况：//TODO
+（5）message：//TODO
+2.检索:
+（1）图书检索：提供了条件完全匹配检索和文本模糊匹配检索，其中条件完全匹配检索还可以在之前的检索结果中选择新的条件进一步检索或者返回进一步检索之前的上一级检索结果
+条件完全匹配检索
+
+根据上一张图中的检索结果进一步检索
+
+文本模糊匹配检索
+
+（2）读者检索
+
+（3）借阅/归还记录检索
+管理员可以根据书籍信息和用户信息进行筛选，检索到图书借阅申请和当前正在被借阅的图书。对于图书借阅申请，检索到之后可以选择同意或拒绝，对于正在被借阅的图书，则可通过归还按钮设为归还。
+普通用户也可以查看自己当前的借阅状态和自己的历史借阅记录。
+
+3.控制
+（1）为了增强程序运行的鲁棒性，在具体操作中增加了很多检查，包括：
+当某用户对某本书的申请尚未被审核时，或某用户正在借阅该书时，无法再次提出对该书的借阅申请；
+当某本书的在架数为0时，用户仍可申请借阅该书，但管理员点击“同意”按钮的操作无效，并且管理员会收到库存数为0无法同意申请的通知；
+管理员可以删除普通用户，但无法删除管理员，从而避免了管理员互相删除导致管理员帐户数为0的情况，同时若某用户有图书尚未归还，管理员也无法删除该用户并且会在点击删除按钮后收到相应的通知；
+用户在申请借阅图书时，会对申请的时间段检查，若申请的借阅时间段的开始日期早于系统当前日期或早于申请借阅时间段的结束日期；
+管理员在修改系统中图书信息时可以增加或减少库藏数，但减少的库藏数不应低于当前正在被借阅的该书信息，否则会引起图书系统管理上的混乱（若减少的库藏数符合要求，会同时更新该书的在架数、库藏数并且会在book_object表中删除该图书的相应数量的未被借阅的复本的记录）；
+为了防止数据库记录出现不一致的情况，数据库中添加了很多外键约束。
+（2）为了遵守最小权限原则，避免客户端直接与数据库交互，导致客户端权限过多而出现意想不到的问题，将对数据库的直接操作封装为SqlFunction类，而客户端通过调用manager类来间接使用SqlFunction类的功能，避免了直接操作数据库带来的问题。
+（3）在登陆时会进行用户类型检查，管理员和普通用户会进入不一样的UI界面，使用不同的接口，从而避免了两者权限上的混乱。
+
+三、程序设计
+1.程序架构
+使用了MVC框架：
+（1）项目目录中ui_administrator、ui_common和ui_user这三个子文件夹下的各类对应于视图，通过Qt Designer进行设计。
+（2）data_linear类（之后会详细介绍该类）为Model，基于std::vector实现，用于存储图书管理系统中的数据。而SqlFunction类可以直接对远程数据库进行增删查改，为data_linear类提供了辅助功能，可以利用SqlFunction类的图书检索及管理相关接口、图书借阅相关接口、收藏夹相关接口等各种各样的接口来操作data_linear，向data_linear类的对象中写入数据。
+（3）utilTool/manager文件夹下的各类（book_borrow_manager、book_retrieve_manager、folder_manager、reader_retrieve_manager）为控制器，当用户与UI界面交互时，会触发相应的槽函数，槽函数再调用这些管理器（…manager）类，由管理器类对SqlFunction类的接口进行调用并向data_linear写入数据。
+2.主要功能类及用到的设计模式
+（1）data_linear类——适配器模式
+为了存储图书信息、用户信息、借阅归还记录等数据，在远程数据库中建立了很多表，这些表中的每一条记录都可以用一个std::vector<QString>来存储，而图书管理系统很多操作都要从数据库中读取符合要求的多条记录并存储起来（如检索图书需要查询符合条件的所有图书），因而可以用std::vector<std::vector<QString>*>存储数据。为了实现接口的转换，这里使用了对象适配器模式，将std::vector<std::vector<QString>*> rows设为data_linear类的private成员用于存储数据，并用数据成员QStringList horizontal_lables记录rows中各列的名称，用int display_column_start和int display_column_end表示UI界面要显示的是哪几列（注:data_linear的rows中有些列的内容不必显示出来，如检索图书时可以从数据库中读取很多内容存在data_linear对象里，包括数据库中的book表中的id字段，但对应id的列不必在QTableWidget中显示出来，将id存储在data_linear中只是为了对相应图书进行修改操作时可以知道对应的id，使修改数据库时更方便）。data_linear对外则提供了bool add_row()、bool remove_row(int row)、bool set_horizontal_labels(QStringList& horizontal_labels)等各种接口。
+
+（2）DisplayFunction类及其子类——单例模式
+本项目中是使用QTableWidget来显示data_linear的数据，这样乍看起来，似乎只要通过data_linear的接口获得相应的display_column_start、display_column_end、row_num以及data_linear某行某列的数据，然后便能显示出来。但实际上，不同的界面会略有不同，比如管理员客户端的图书检索界面的QTableWidget的前三列不是显示data_linear里存储的数据而是显示预览图书按钮、修改图书按钮、删除图书按钮（然后自第四列开始显示data_linear中display_column_start列到display_column_end列的数据），普通用户客户端的图书检索界面的QTableWidget则是前两列为预览图书按钮、借阅图书按钮（然后自第三列开始依次显示data_linear中display_column_start列到display_column_end列的数据。并且，不同界面上的按钮也和不同的槽函数关联。
+可以看到，不同界面上的QTableWidget除了刚开始几列有所不同，后面的列都是在显示data_linear中display_column_start列到display_column_end列的数据，为了利用这种差异中的共性，提高代码复用率，可以实现一个DisplayFunction类作为父类，该父类提供一个void display_data_linear_without_btn(data_linear* data,QTableWidget* table,int btn_num,QStringList btn_name)函数（该函数的功能是将函数的形参中的table自其btn_num列开始依次显示形参中的data的display_column_start列到display_column_end列的数据）并声明一个virtual void display(data_linear* data,QTableWidget* table,QMainWindow *window)=0的纯虚函数，然后交由子类实现这个纯虚函数（该纯虚函数仅用于在QTableWidget中加载按钮和关联相应的槽函数）。这样子类在对QTableWidget进行处理时，先调用同一个void display_data_linear_without_btn(…)函数，再去调用自己实现的void display(…)函数，从而提高了代码复用率。
+对在程序实际调用中，大部分界面都使用一个或多个只与该界面里的QTableWidget相对应的DisplayFunction类的子类，如display_for_managebookwindow_for_admin类只被用于ManageBookWindow_For_Admin界面类，display_for_managereaderwindow_for_admin类只被用于ManageReaderWindow_For_Admin界面类。
+考虑到多次创建对象会降低程序效率，而静态的虚函数又无法通过编译，因而这里采用单例模式。
+（3）SqlFunction类——适配器模式
+QSqlQuery类可以对数据库进行增删查改，但由于QSqlQuery类只能执行一些通用的操作而不能提供一些更具体的接口(如若想在本项目中的数据库中增加图书，需要对多张表进行insert操作，并且由于外键约束的存在导致操作顺序必须遵循一定标准，而这样的操作需要依次调用QSqlQuery对象的多个函数)。同时，QSqlQuery类也不能直接和data_linear类交互，将查询结果存储在data_linear类的对象中。为了实现这些具体的接口，同时为了直接用data_linear类记录查询结果，这里采用对象适配器模式，将QSqlQuery* query设置为SqlFunction类的private成员。SQLFunction封装了很多接口。
+（4）book_retrieve_manager类及其他管理器类
+因为SqlFunction类提供了很多接口，而实际上每个界面需要调用的接口往往非常有限，如添加新图书的界面（AddBookDialog_For_Admin类）实际上只会用到SqlFunction::add_book_record接口，为了遵循最小权限原则，设计了多个管理器类，每个管理器类只调用QSqlFunction的几个功能接近的接口，而每个具体的界面只会使用某一个管理器类，这样的设计更符合最小权限原则。
+
